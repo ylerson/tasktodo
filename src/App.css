@@ -1,0 +1,92 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 380px;
+  margin: auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 100%;
+}
+header h1 {
+  color: #8d99ae;
+  font-size: 1.4rem;
+  margin: 0;
+}
+header h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.6rem;
+}
+.input_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.input_add_task {
+  padding: 15px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+}
+.input_add_task::placeholder {
+  color: #8d99ae;
+}
+.show_task {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 30px;
+  gap: 8px;
+}
+.card_task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 1px solid black;
+}
+.card_task p {
+  margin: 0;
+}
+.input_check_task {
+  padding: 10px;
+  border: 2px solid #8d99ae;
+  border-radius: 50%;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+.card_task_checked {
+  background-color: #8d99ae;
+  text-decoration: overline;
+}
+.input_check_task:checked::before {
+  content: "\2714";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #41b883;
+  position: absolute;
+  left: 0.34rem;
+  top: 0.09rem;
+}
+.input_check_task:checked {
+  border: 2px solid #41b883;
+}
+.any_task {
+  color: #8d99ae;
+  text-align: center;
+}
