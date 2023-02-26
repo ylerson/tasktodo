@@ -3,14 +3,10 @@ import { useState } from "react";
 export default function useTask() {
   const [task, setTask] = useState([]);
 
-  const [inputTaskValue, setInputTaskValue] = useState("");
-
   const handleAddNewTask = (e) => {
-    // if (key !== "Enter") return;
     e.preventDefault();
-
-    setTask([...task, { title: e.target.value, isCheck: false }]);
-    setInputTaskValue("");
+    setTask([...task, { title: e.target[0].value, isCheck: false }]);
+    e.target.reset();
   };
 
   const updateChecked =
@@ -27,5 +23,5 @@ export default function useTask() {
       setTask(newArray);
     };
 
-  return { updateChecked, handleAddNewTask, inputTaskValue, task };
+  return { updateChecked, handleAddNewTask, task };
 }
