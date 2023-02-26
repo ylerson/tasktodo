@@ -10,7 +10,8 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  margin: 8px;
+  margin: 10px;
+  margin-bottom: 25px;
   width: 100%;
 }
 header h1 {
@@ -46,6 +47,9 @@ header h2 {
   width: 100%;
   margin-top: 30px;
   gap: 8px;
+}
+.main_section {
+  width: 100%;
 }
 .card_task {
   display: flex;
