@@ -10,7 +10,8 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  margin: 8px;
+  margin: 10px;
+  margin-bottom: 25px;
   width: 100%;
 }
 header h1 {
